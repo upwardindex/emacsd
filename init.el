@@ -24,4 +24,4 @@
 (load-user-file "appearance.el")
 (load-user-file "code.el")
 (load-user-file "modes.el")
-(load-user-file "slime.el")
+(load-user-file "slimecfg.el")
