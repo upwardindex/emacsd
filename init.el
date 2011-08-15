@@ -20,8 +20,20 @@
 
 (setq load-path (cons user-init-dir load-path))
 
+;;; This was installed by package-install.el.
+;;; This provides support for the package system and
+;;; interfacing with ELPA, the package archive.
+;;; Move this code earlier if you want to reference
+;;; packages in your .emacs.
+(when
+    (load
+     (expand-file-name "~/.emacs.d/elpa/package.el"))
+  (package-initialize))
+
+
 (load-user-file "base.el")
 (load-user-file "appearance.el")
 (load-user-file "code.el")
 (load-user-file "modes.el")
-(load-user-file "slimecfg.el")
+;(load-user-file "slimecfg.el")
+
